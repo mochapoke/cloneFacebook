@@ -27,7 +27,7 @@ const Divider = styled.View`
   height: 0.5px;
   background: #F0F0F0;
 `;
-const Menu = styled.View`
+const Menu = styled.TouchableOpacity`
   flex: 1;
   flex-direction: row;
   align-items: center;

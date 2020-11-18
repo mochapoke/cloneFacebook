@@ -36,15 +36,33 @@ function Users(){
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        style={{paddinLeft: 11}}>
+        style={{paddingLeft: 11}}
+      >
+        <Room>
+          <MaterialComIcon name="video-plus" size={26} color="#e141fc" />
+          <Text>Creat your Room</Text>
+        </Room>
+        <User>
+          <Avatar source={require('../assets/user2.jpg')} online={true} />
+        </User>
+        <User>
+          <Avatar source={require('../assets/user3.jpg')} online={true} />
+        </User>
+        <User>
+          <Avatar source={require('../assets/user4.jpg')} online={true} />
+        </User>
+        <User>
+          <Avatar source={require('../assets/user5.jpg')} />
+        </User>
+        <User>
+          <Avatar source={require('../assets/user2.jpg')} />
+        </User>
+        <User>
+          <Avatar source={require('../assets/user5.jpg')} />
+        </User>
       </ScrollView>
-      <Room>
-        <MaterialComIcon name="video-plus" size={26} color="#e141fc" />
-        <Text>Creat your Room</Text>
-      </Room>
-      <User>
-        <Avatar source={require('../assets/user2.jpg')} outline={true} />
-      </User>
+
+
     </Container>
   )
 }
