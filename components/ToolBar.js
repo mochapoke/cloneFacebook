@@ -4,7 +4,7 @@ import Avatar from './Avatar';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import MaterialComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import BottomDivider from './BottomDivider';
 
 const Container = styled.View`
   width: 100%;
@@ -44,11 +44,6 @@ const Separator = styled.View`
   width: 1px;
   height: 26px;
   background: #F0F0F0;
-`;
-const BottomDivider = styled.View`
-  width: 100%;
-  height: 9px;
-  background: #f0f2f5;
 `;
 
 function ToolBar(){

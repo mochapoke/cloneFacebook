@@ -3,6 +3,7 @@ import {ScrollView} from 'react-native'
 import styled from 'styled-components/native';
 import MaterialComIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Avatar from './Avatar';
+import BottomDivider from './BottomDivider';
 
 const Container = styled.View`
   width: 100%;
@@ -19,7 +20,7 @@ const Room = styled.TouchableOpacity`
   border-color: #82b1ff;
   border-width: 1px;
   padding: 0 15px;
-  margin-right: 12px;
+  margin-right: 13px;
 `;
 const Text = styled.Text`
   color: #1777f2;
@@ -27,11 +28,12 @@ const Text = styled.Text`
   padding-left: 6px;
 `;
 const User = styled.View`
-  margin-left: 13px;
+  margin-right: 13px;
 `;
 
 function Users(){
   return (
+    <>
     <Container>
       <ScrollView
         horizontal
@@ -61,9 +63,9 @@ function Users(){
           <Avatar source={require('../assets/user5.jpg')} />
         </User>
       </ScrollView>
-
-
     </Container>
+    <BottomDivider />
+    </>
   )
 }
 
